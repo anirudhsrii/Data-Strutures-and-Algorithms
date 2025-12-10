@@ -21,7 +21,6 @@ public:
             }
             mpp[nums[i]] = i;
         }
-        
         return false;
     }
 };
