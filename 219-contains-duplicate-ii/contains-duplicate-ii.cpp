@@ -14,7 +14,7 @@ public:
         
         unordered_map<int, int> mpp;
         for(int i = 0; i < nums.size(); i++) {
-            if(mpp.count(nums[i])) {
+            if (mpp.find(nums[i]) != mpp.end()) {  //check if a specific key already exists in the map
                 if(abs(i - mpp[nums[i]]) <= k) {
                     return true;
                 }
