@@ -2,6 +2,7 @@ class Solution:
     def findTargetSumWays(self, nums: List[int], target: int) -> int:
         
         #rows -> idx , cols -> val
+        #val can range from -sum(nums)[if all numbers we do -] to sum(nums)[if all numbers we do +]
         dp = [[-1 for _ in range(-sum(nums) , sum(nums)+1)] for _ in range(len(nums) + 1)]
 
         def solve(idx , val , nums , target ,dp):
