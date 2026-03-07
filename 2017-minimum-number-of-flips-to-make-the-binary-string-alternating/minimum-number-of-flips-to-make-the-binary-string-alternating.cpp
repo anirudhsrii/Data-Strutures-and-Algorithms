@@ -33,6 +33,7 @@ public:
                 }
                 i++;
             }
+            // when your window size equals to the string size
             if( j-i+1 == n){
                 result = min({result,flip1,flip2});
             }
